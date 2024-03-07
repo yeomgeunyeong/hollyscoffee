@@ -1,0 +1,373 @@
+@charset "utf-8";
+
+#wrap{}
+
+
+/* header 영역 */
+#header{
+    height: 148px;
+    border-bottom: 2px solid #ba000d;
+}
+
+.head_inner{
+    width: 960px;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+}
+
+.util{
+    float: left;
+    /* border: 1px solid black; */
+}
+
+.util li{
+    float: left;
+    /* border: 1px solid red; */
+}
+
+.util li:nth-child(2){
+    margin-top: 20px;
+}
+
+.util li a{}
+
+.logo{
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.logo a{}
+
+.topmenu{
+    float: right;
+    /* border: 1px solid black; */
+    margin-top: 20px;
+}
+
+.topmenu li{
+    float: left;
+    margin-left: 15px;
+}
+
+.topmenu li a{
+    font-size: 12px;
+    font-weight: bold;
+    color: #666;
+}
+
+.topmenu li a:hover{
+    color: black;
+}
+
+.nav{}
+.menu{
+    display: flex;
+    height: 70px;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+
+
+/* contents 영역 */
+#contents{}
+.img_slide{
+    width: 1920px;
+    margin: 0 auto;
+}
+
+.cont_inner{
+    width: 960px;
+    margin: 0 auto;
+}
+
+
+
+/* cont_wrap01 영역 */
+.cont_wrap01{
+    padding: 50px 0;
+    /* border: 1px solid #ba000d; */
+}
+
+.cont_wrap01_list{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cont_wrap01_list > li{
+    float: left;
+    height: 272px;
+}
+
+.cont_wrap01_list > li > h3{
+    padding-top: 30px;
+    padding-left: 20px;
+    /* border: 1px solid black; */
+}
+
+.franchise{
+    background-color: #faf9f7;
+    width: 225px;
+}
+
+.mall{
+    width: 460px;
+}
+
+.mall > p {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.mall_list{
+    display: flex;
+    /* border: 1px solid black; */
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.mall_list li{
+    flex: 1 0 auto;
+    text-align: center;
+}
+
+.mall_list li:nth-child(2){
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+}
+
+.mall_list li p{
+    font-size: 12px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.mall_list li:hover{
+    color: #ba000d;
+    font-weight: bold;
+}
+
+.mall_list img{
+    width: 80%;
+}
+
+.store{
+    width: 240px;
+    height: 272px;
+    background-color: #faf9f7;
+}
+
+
+/* cont_wrap02 영역 */
+.cont_wrap02{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cont_wrap02 a{
+    /* border: 1px solid red; */
+
+}
+
+.cont_wrap02 a img{
+    /* border: 1px solid green; */
+    
+}
+
+
+/* cont_wrap03 영역 */
+.cont_wrap03{
+    margin-top: 50px;
+    /* border: 1px solid red; */
+}
+
+.hollys_list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hollys_list > li{
+    width: 24%;
+    /* border: 1px solid green; */
+}
+
+.hollys_list h3{
+    margin-bottom: 10px;
+}
+
+.event_list{}
+
+.event_list li{
+    display: flex;
+    justify-content: space-between;
+}
+
+.event_list li a{
+    width: 80%;
+    /* border: 1px solid yellow; */
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* 블럭이고 너비값이 있을 때 적용됨, 플렉스는 인라인블럭 상관이 없어지게 되니까
+    원래 인라인구조인 a태그에도 적용되는 것 */
+    margin-bottom: 5px;
+}
+
+.b2b h3{
+    margin-top: 5px;
+}
+
+.b2b p{
+    line-height: 1.5;
+}
+
+.b2b p.more{
+    line-height: normal !important;
+}
+
+.news{}
+.news h3{
+    margin-top: 5px;
+}
+.news .table{
+    width: 100%;
+    /* border: 1px solid black; */
+    table-layout: fixed;
+    /* 이 명령어가 들어가야 테이블구조도 줄바꿈이 가능해진다.
+    테이블은 내용이 넘치면 넘치는대로 테이블도 따라가게 되기 때문에
+    텍스트의 길이가 너비값을 넘치는 형태가 만들어지지 않기 때문에 
+    꼭 위의 명렁어를 넣어줘야 함. */
+}
+
+.news .table td{
+    padding-bottom: 5px;
+}
+
+.news .table td.t1{
+    width: 80%;
+}
+
+.news .table td.t1 a{
+    display: block;
+    width: 100%;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.news .table td.t2{
+    width: 20%;       
+    text-align: right;
+}
+
+.notice{}
+.notice_list{
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    align-items: center;
+}
+.notice_list li{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5px;
+}
+
+.notice_list .first{
+    border-right: 1px dotted gray;
+    padding: 5px 20px;
+}
+
+.notice_list li a{}
+
+.notice_list li span{
+    margin-top: 15px;
+}
+
+.notice_list li:first-child span{
+    margin-top: 10px;
+}
+
+
+
+
+
+/* cont_wrap04 영역 */
+.cont_wrap04{
+    padding: 50px 0 80px;
+    border-top: 3px solid #ba000d;
+    margin-top: 50px;
+}
+
+.cont_wrap04 img{}
+
+
+
+
+
+
+/* footer 영역 */
+#footer{
+    background: #ba000d;
+    padding: 50px 0;
+}
+
+.foot_inner{
+    width: 960px;
+    margin: 0 auto;
+}
+
+.f_menu{
+    display: flex;
+    color: white;
+}
+.f_menu li{}
+.f_menu li a{
+    padding: 5px 10px;
+    font-size: 12px;
+    position: relative;
+}
+
+.f_menu li a::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 12px;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 6px;
+}
+
+.f_menu li:first-child a{
+    padding-left: 0;
+    font-weight: bold;
+}
+
+.f_menu li:last-child a::after{
+    display: none;
+}
+
+.f_menu li a:hover{
+    text-decoration: underline;
+}
+
+.address{
+    margin-top: 30px;
+    font-size: 12px;
+    font-style: normal ;
+    color: #eee;
+    line-height: 1.7;
+    opacity: 0.5;
+}
+
+
+
+
